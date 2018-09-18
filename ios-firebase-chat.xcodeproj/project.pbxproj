@@ -14,6 +14,7 @@
 		13DF568821518CC60092E8F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13DF568621518CC60092E8F4 /* Main.storyboard */; };
 		13DF568A21518CC80092E8F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13DF568921518CC80092E8F4 /* Assets.xcassets */; };
 		13DF568D21518CC80092E8F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13DF568B21518CC80092E8F4 /* LaunchScreen.storyboard */; };
+		13F6DA7A215194AE00FF3D16 /* MessageKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13F6DA79215194AE00FF3D16 /* MessageKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		13DF568921518CC80092E8F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "ios-firebase-chat/Assets.xcassets"; sourceTree = "<group>"; };
 		13DF568C21518CC80092E8F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13DF568E21518CC80092E8F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "ios-firebase-chat/Info.plist"; sourceTree = "<group>"; };
+		13F6DA79215194AE00FF3D16 /* MessageKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageKit.framework; path = Carthage/Build/iOS/MessageKit.framework; sourceTree = "<group>"; };
 		A5EE47A0561803C65BADD6A4 /* Pods-ios-firebase-chat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-firebase-chat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ios-firebase-chat/Pods-ios-firebase-chat.debug.xcconfig"; sourceTree = "<group>"; };
 		C375192C54F8EBC95CAF02C1 /* Pods_ios_firebase_chat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_firebase_chat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E35347A9C22560BC9ECE7A5F /* Pods-ios-firebase-chat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-firebase-chat.release.xcconfig"; path = "Pods/Target Support Files/Pods-ios-firebase-chat/Pods-ios-firebase-chat.release.xcconfig"; sourceTree = "<group>"; };
@@ -36,6 +38,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11387BCFFDB681B2285BC0B4 /* Pods_ios_firebase_chat.framework in Frameworks */,
+				13F6DA7A215194AE00FF3D16 /* MessageKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +80,7 @@
 		46120CB2DAC48938F40D0E90 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				13F6DA79215194AE00FF3D16 /* MessageKit.framework */,
 				C375192C54F8EBC95CAF02C1 /* Pods_ios_firebase_chat.framework */,
 			);
 			name = Frameworks;
@@ -103,6 +107,7 @@
 				13DF567C21518CC60092E8F4 /* Frameworks */,
 				13DF567D21518CC60092E8F4 /* Resources */,
 				DE3B2A35AF7208AE504F00E9 /* [CP] Embed Pods Frameworks */,
+				13F6DA7B215194D800FF3D16 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -161,6 +166,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		13F6DA7B215194D800FF3D16 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/MessageKit.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Carthage/Build/iOS/MessageKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
 		A03D5BAB06603845D855A14A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -367,6 +391,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "ios-firebase-chat/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -385,6 +413,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "ios-firebase-chat/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
