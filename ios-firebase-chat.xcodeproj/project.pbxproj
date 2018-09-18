@@ -10,7 +10,6 @@
 		11387BCFFDB681B2285BC0B4 /* Pods_ios_firebase_chat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C375192C54F8EBC95CAF02C1 /* Pods_ios_firebase_chat.framework */; };
 		1312170121519107005E3AA0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1312170021519107005E3AA0 /* GoogleService-Info.plist */; };
 		13DF568321518CC60092E8F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DF568221518CC60092E8F4 /* AppDelegate.swift */; };
-		13DF568521518CC60092E8F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DF568421518CC60092E8F4 /* ViewController.swift */; };
 		13DF568821518CC60092E8F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13DF568621518CC60092E8F4 /* Main.storyboard */; };
 		13DF568A21518CC80092E8F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13DF568921518CC80092E8F4 /* Assets.xcassets */; };
 		13DF568D21518CC80092E8F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13DF568B21518CC80092E8F4 /* LaunchScreen.storyboard */; };
@@ -23,7 +22,6 @@
 		1312170021519107005E3AA0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		13DF567F21518CC60092E8F4 /* ios-firebase-chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-firebase-chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13DF568221518CC60092E8F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "ios-firebase-chat/AppDelegate.swift"; sourceTree = "<group>"; };
-		13DF568421518CC60092E8F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "ios-firebase-chat/ViewController.swift"; sourceTree = "<group>"; };
 		13DF568721518CC60092E8F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		13DF568921518CC80092E8F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "ios-firebase-chat/Assets.xcassets"; sourceTree = "<group>"; };
 		13DF568C21518CC80092E8F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -72,7 +70,6 @@
 			children = (
 				13F6DA7C2151991100FF3D16 /* View Controllers */,
 				13DF568221518CC60092E8F4 /* AppDelegate.swift */,
-				13DF568421518CC60092E8F4 /* ViewController.swift */,
 				13DF568621518CC60092E8F4 /* Main.storyboard */,
 				13DF568921518CC80092E8F4 /* Assets.xcassets */,
 				13DF568B21518CC80092E8F4 /* LaunchScreen.storyboard */,
@@ -256,7 +253,6 @@
 			files = (
 				13F6DA7E2151996F00FF3D16 /* ChatChannelsTableViewController.swift in Sources */,
 				13F6DA8021519A6D00FF3D16 /* ChannelDetailViewController.swift in Sources */,
-				13DF568521518CC60092E8F4 /* ViewController.swift in Sources */,
 				13DF568321518CC60092E8F4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
